@@ -108,3 +108,5 @@ In Tableau Desktop for Mac, choose **Connect → To a Server → MySQL**, enter 
 ## Tests and troubleshooting
 
 `pytest` does not call the live API or require MySQL. HTTP behavior is tested with local mock response/session objects. For `ModuleNotFoundError`, activate `.venv` and run `pip install -e .`; for API errors, check connectivity and retry later, verify token/configuration, and keep the date/type scope bounded. For MySQL connection errors, confirm the service is running, `MYSQL_HOST`/`MYSQL_PORT` are correct, the database and user exist, and privileges apply from the connecting host. The `check-db` command never creates or modifies a database.
+
+[Watch my Tableau dashboard demo](https://youtu.be/FPcn39zsQuA)
