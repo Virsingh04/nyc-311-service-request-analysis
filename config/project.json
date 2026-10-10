@@ -1,0 +1,16 @@
+{
+  "dataset_id": "erm2-nwe9",
+  "api_base_url": "https://data.cityofnewyork.us/resource/erm2-nwe9.json",
+  "metadata_url": "https://data.cityofnewyork.us/api/views/erm2-nwe9.json",
+  "start_date": "2025-10-01",
+  "end_date": "2026-10-01",
+  "request_types": ["Blocked Driveway"],
+  "fields": ["unique_key", "created_date", "closed_date", "agency", "agency_name", "complaint_type", "descriptor", "status", "borough", "community_board"],
+  "page_size": 1000,
+  "max_rows": 250000,
+  "max_runtime_seconds": 3600,
+  "overlap_days": 14,
+  "open_refresh_days": 180,
+  "raw_dir": "data/raw",
+  "log_dir": "logs"
+}
