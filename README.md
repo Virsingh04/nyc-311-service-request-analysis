@@ -2,8 +2,6 @@
 
 A portfolio-scale analytics pipeline for a configurable window of NYC 311 service requests. Python extracts a bounded slice from the NYC Open Data Socrata API, preserves a raw JSON snapshot and manifest, cleans and validates request records, then upserts a MySQL fact table. SQL views provide Tableau-facing monthly, closure, and open-backlog reporting.
 
-For a plain-language walkthrough and step-by-step Tableau dashboard instructions, see [README_BEGINNER_GUIDE.md](README_BEGINNER_GUIDE.md).
-
 ## Current implementation and verification
 
 - Dataset metadata was checked against the official API on October 3, 2026. Dataset ID: `erm2-nwe9`; title: **311 Service Requests from 2020 to Present**. The API names are `complaint_type` and `descriptor` (the current display labels are “Problem (formerly Complaint Type)” and “Problem Detail (formerly Descriptor)”). The configured fields below exist in the metadata.
